@@ -3801,3 +3801,20 @@ form .inputs-description {
 /* ------------------------------------------------*/
 /* Gallery End */
 /* ------------------------------------------------*/
+
+
+
+.split-slide {
+  position: relative; /* Ensures proper positioning context */
+  width: 100%; /* Define the width of the parent */
+  height: 100%; /* Define the height of the parent */
+}
+
+.responsive-video {
+  position: absolute; /* Ensures full coverage */
+  top: 0;
+  left: 0;
+  width: 100%; /* Matches parent's width */
+  height: 100%; /* Matches parent's height */
+  object-fit: cover; /* Ensures the video scales without distortion */
+}
