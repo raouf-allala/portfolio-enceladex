@@ -1923,6 +1923,12 @@ form .inputs-description {
 .header__logo img {
   width: 200px;
 }
+
+@media only screen and (max-width: 768px) {
+  .header__logo img {
+    width: 150px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .header__logo {
     left: 5rem;
@@ -2113,7 +2119,7 @@ form .inputs-description {
 @media only screen and (min-width: 992px) {
   .headline {
     position: absolute;
-    bottom: 0;
+    top: 30%;
     left: 0;
   }
 }
@@ -3654,6 +3660,10 @@ form .inputs-description {
 /* ------------------------------------------------*/
 .works__gallery {
   position: relative;
+}
+
+.pswp__img {
+  object-fit: cover;
 }
 
 .my-gallery__item {
