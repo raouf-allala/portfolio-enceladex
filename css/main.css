@@ -3672,6 +3672,10 @@ form .inputs-description {
   overflow: hidden;
   cursor: pointer;
 }
+
+.my-gallery img {
+  width: 100% !important;
+}
 @media only screen and (min-width: 1200px) {
   .my-gallery__item {
     -webkit-transform: scale3d(1, 1, 1);
@@ -3717,6 +3721,7 @@ form .inputs-description {
 }
 
 .my-gallery__description {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 1.5rem;

@@ -256,3 +256,28 @@ $(function () {
   // Contact Form End
   // --------------------------------------------- //
 });
+
+const portfolioTrigger = document.getElementById('portfolio-trigger');
+const worksTrigger = document.getElementById('works-trigger');
+const worksSection = document.getElementById('works');
+const mainSection = document.getElementById('main');
+const homeTrigger = document.getElementById('home-trigger');
+const header = document.getElementById('header');
+portfolioTrigger.addEventListener('click', function (event) {
+  event.preventDefault();
+  homeTrigger.classList.remove('active-link');
+  mainSection.classList.remove('active');
+  mainSection.classList.add('animate-out');
+  mainSection.classList.remove('animate-in');
+  setTimeout(function () {
+    mainSection.classList.remove('animate-out');
+  }, 500);
+  setTimeout(function () {
+    worksSection.classList.add('active');
+    worksSection.classList.add('animate-in');
+    worksTrigger.classList.add('active-link');
+  }, 500);
+  setTimeout(function () {
+    header.classList.add('inner-is-visible');
+  }, 1500);
+});

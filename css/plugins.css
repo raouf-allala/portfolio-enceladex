@@ -27585,10 +27585,24 @@ button.swiper-pagination-bullet {
 
 .pswp__img {
   position: absolute;
-  width: auto;
+  width: 60% !important;
   height: auto;
   top: 0;
-  left: 0;
+  left: -14vw;
+  min-width: 50% !important;
+}
+
+
+@media screen and (max-width: 766px) {
+  .pswp__img {
+    left: -5vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .pswp__img {
+    left: 10vw;
+  }
 }
 
 /*
